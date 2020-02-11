@@ -22,14 +22,21 @@ function App() {
 
   };
 
+  const handleLogout=()=>{
+    if(loginVerified){
+      return <button id="logout" onClick={()=>setLoginVerified(false)} >Logout</button>
+    }
+    else return;
+  };
+
 
   return (
     <div >
       <header >
         <h3>Derpy Doodles</h3>
-        { verifyLogin }
-        
+        { handleLogout() }
       </header>
+        { verifyLogin() }
     </div>
   );
 }
