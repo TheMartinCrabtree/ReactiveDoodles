@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Login=(props)=>{
-
+    useEffect(()=>{
+        localStorage.setItem('username', "Martin");
+    },
+    [])
 
     return(
         <section>
