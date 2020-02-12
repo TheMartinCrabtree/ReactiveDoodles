@@ -14,7 +14,7 @@ const NavBar=(props)=>{
 
     return(
         <nav>
-            <h4>Welcome: </h4>
+            <h4>Welcome: { state.username } </h4>
         </nav>
     );
 };

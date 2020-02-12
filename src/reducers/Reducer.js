@@ -8,7 +8,8 @@ const Reducer=(state, action)=>{
                 ...state,
                 username: action.payload
             };
-            default: return state;
+        default: 
+            return state;
     };
 };
 
