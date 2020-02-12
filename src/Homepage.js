@@ -3,18 +3,17 @@ import React, {useContext, useEffect} from 'react';
 import Store, { Context } from './Store';
 
 import Navbar from './components/Navbar';
+import NavBar from './components/Navbar';
 
 
-const Homepage=()=>{
-    const currentUsername = localStorage.getItem('username');
-
-    // get saved user info from local storage
+const Homepage=(props)=>{
     
 
     return(
         <Store >
             <h4>This is the homepage component</h4>
-            <Navbar />
+            <NavBar />
+            
 
         </Store>
     );
