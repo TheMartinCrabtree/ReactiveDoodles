@@ -7,6 +7,8 @@ import ViewController from './components/ViewController';
 
 
 const Homepage=(props)=>{
+    // const [ state, dispatch ] = useContext(Context);
+
     
 
     return(
