@@ -4,7 +4,6 @@ import { Context } from '../Store';
 const NavBar=(props)=>{
     // get saved user info from local storage
     const currentUsername = localStorage.getItem('username') ? localStorage.getItem('username') : "";
-    console.log("username: ", currentUsername)
     
     const [state, dispatch] = useContext(Context);
     
