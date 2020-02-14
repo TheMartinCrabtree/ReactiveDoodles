@@ -19,7 +19,6 @@ const InterfaceWrapper=(props)=>{
 
     return(
         <section>
-            <h4>This is InterfaceWrapper</h4>
             <NavBar />
             <ViewController />
         </section>

@@ -11,10 +11,7 @@ function App() {
   const verifyLogin=()=>{
     if(loginVerified){
       return(
-        <Homepage>
-          { handleLogout() }
-
-        </Homepage>
+        <Homepage />
       );
     }else{
       return(
@@ -33,13 +30,13 @@ function App() {
 
 
   return (
-    <div >
-      <header >
-        <h3>Derpy Doodles</h3>
+    <main className="App-main" >
+      <header className="App-header" >
+        <h3>Derpy Doodles Banner</h3> { handleLogout() }
         
       </header>
         { verifyLogin() }
-    </div>
+    </main>
   );
 }
 

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import {Context} from '../Store';
+import '../App.css';
 
 
 
@@ -8,14 +9,15 @@ const NavBar=(props)=>{
     
     return(
         <nav>
-            <h4>Welcome: { state.username } </h4>
-            <div> 
-                <button> Home </button> 
-                <button> Profile </button>
-                <button> Draw A Doodle </button>
-                <button> Gallery </button> 
-                <button> About </button>
+            <div className="navbar-container" >
+                <div> Welcome: { state.username }  </div>
+                <div> Home </div>
+                <div> Profile </div>
+                <div> Draw A Doodle </div>
+                <div> Gallery </div>
+                <div> About </div>
             </div>
+            
         </nav>
     );
 };
