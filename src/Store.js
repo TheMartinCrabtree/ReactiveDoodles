@@ -2,16 +2,8 @@
 import React, {createContext, useReducer } from 'react';
 import Reducer from './reducers/Reducer';
 
-let activeViewsObj = { 
-    draw: false,
-    gallery: false,
-    myGallery: true,
-    profile: true
-}
-
 const initialState = {
-    username: "",
-    activeViews: activeViewsObj
+    username: ""
 };
 
 const Store=({children})=>{
@@ -27,3 +19,9 @@ const Store=({children})=>{
 export const Context = createContext(initialState);
 
 export default Store;
+
+
+
+
+
+

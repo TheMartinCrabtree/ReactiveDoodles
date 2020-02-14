@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import ParentComponent from './ParentComponent';
 
 const Login=(props)=>{
     useEffect(()=>{
@@ -8,13 +7,9 @@ const Login=(props)=>{
     [])
 
     return(
-        // <section>
-        //     <h4>Please login:</h4>
-        //     <button id="login" onClick={()=>props.setLoginVerified(true)} >Login</button>
-        // </section>
         <section>
-        
-        <ParentComponent />
+            <h4>Please login:</h4>
+            <button id="login" onClick={()=>props.setLoginVerified(true)} >Login</button>
         </section>
     );
 }
