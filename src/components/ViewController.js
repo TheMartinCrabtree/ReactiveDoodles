@@ -12,6 +12,7 @@ const ViewController=(props)=>{
     console.log("Active Views: ", activeViewsObj);
 
     // draw, gallery, myGallery, profile
+    
 
     const handleDrawView=()=>{
         if(activeViewsObj.draw){
