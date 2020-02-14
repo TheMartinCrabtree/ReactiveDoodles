@@ -10,12 +10,12 @@ const NavBar=(props)=>{
     return(
         <nav>
             <div className="navbar-container" >
-                <div> Welcome: { state.username }  </div>
-                <div> Home </div>
-                <div> Profile </div>
-                <div> Draw A Doodle </div>
-                <div> Gallery </div>
-                <div> About </div>
+                <div className="navbar-item" > Welcome: { state.username }  </div>
+                <div className="navbar-item" > Home </div>
+                <div className="navbar-item" > Profile </div>
+                <div className="navbar-item" > Draw A Doodle </div>
+                <div className="navbar-item" > Gallery </div>
+                <div className="navbar-item" > About </div>
             </div>
             
         </nav>

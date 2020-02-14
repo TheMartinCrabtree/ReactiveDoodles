@@ -39,4 +39,8 @@
   text-align: center;
 }
 
+.navbar-item:hover {
+  background-color: rgba(41, 115, 252, 0.753);
+}
+
 

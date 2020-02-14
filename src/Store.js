@@ -4,7 +4,7 @@ import Reducer from './reducers/Reducer';
 
 const initialState = {
     username: "",
-    activeViews: { draw: false, gallery: false, myGallery: true, profile: true  }
+    activeViews: { home: true, draw: false, gallery: false, profile: false, about: false  }
 };
 
 const Store=({children})=>{
