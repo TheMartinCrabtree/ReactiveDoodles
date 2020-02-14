@@ -9,7 +9,13 @@ const NavBar=(props)=>{
     return(
         <nav>
             <h4>Welcome: { state.username } </h4>
-            <div> Home Profile Draw Gallery </div>
+            <div> 
+                <button> Home </button> 
+                <button> Profile </button>
+                <button> Draw A Doodle </button>
+                <button> Gallery </button> 
+                <button> About </button>
+            </div>
         </nav>
     );
 };

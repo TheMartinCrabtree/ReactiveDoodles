@@ -11,7 +11,10 @@ function App() {
   const verifyLogin=()=>{
     if(loginVerified){
       return(
-        <Homepage />
+        <Homepage>
+          { handleLogout() }
+
+        </Homepage>
       );
     }else{
       return(
@@ -33,7 +36,7 @@ function App() {
     <div >
       <header >
         <h3>Derpy Doodles</h3>
-        { handleLogout() }
+        
       </header>
         { verifyLogin() }
     </div>

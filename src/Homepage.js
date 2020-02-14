@@ -10,7 +10,10 @@ const Homepage=(props)=>{
 
     return(
         <Store >
-            <h4>This is the homepage component</h4>
+            <div> 
+                <h4>This is the homepage component { props.children } </h4>
+            </div>
+
             <InterfaceWrapper  />
 
         </Store>
