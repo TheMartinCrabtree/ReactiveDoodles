@@ -4,7 +4,6 @@ import { Context } from '../Store';
 import Home from './Home'
 import Draw from './Draw';
 import Gallery from './Gallery';
-import MyGallery from './MyGallery';
 import Profile from './Profile';
 
 const ViewController=(props)=>{
@@ -34,8 +33,8 @@ const ViewController=(props)=>{
     };
 
     return(
-        <section>
-            <h4>View Controller</h4>
+        <section className="ViewController-container" >
+            { handleHomeView() }
             { handleProfileView() }
             { handleDrawView() }
         </section>

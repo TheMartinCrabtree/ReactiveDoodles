@@ -9,6 +9,11 @@
   padding-right: 5vw;
 }
 
+.App-container {
+  background-color: #7184a8;
+  min-height: 100vh;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 15vh;
@@ -19,6 +24,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+
 
 .App-link {
   color: #61dafb;
@@ -41,6 +48,19 @@
 
 .navbar-item:hover {
   background-color: rgba(41, 115, 252, 0.753);
+}
+
+.ViewController-container {
+  padding: 15px;
+}
+
+.View-landingpage {
+  background-color: #c2d7ff;
+  border: #282c34;
+  border-radius: 10px;
+  border-width: 1px;
+  min-height: 50vh;
+  padding: calc(10px + 2vw);
 }
 
 
