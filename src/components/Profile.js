@@ -2,7 +2,16 @@ import React from 'react';
 
 const Profile=(props)=>{
     return(
-        <section>This is Profile.</section>
+        <section >
+            <h4>Name</h4>
+
+            <div>profile picture</div>
+            <div>email address</div>
+            <div>about me</div>
+            <div>My Gallery</div>
+
+
+        </section>
     );
 }
 

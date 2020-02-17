@@ -2,7 +2,9 @@ import React from 'react';
 
 const Draw=(props)=>{
     return(
-        <section>This is draw.</section>
+        <section>
+            This is draw.
+        </section>
     );
 }
 
