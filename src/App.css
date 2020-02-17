@@ -1,5 +1,5 @@
 .App {
-  
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .App-main {
@@ -25,11 +25,11 @@
   color: white;
 }
 
-
-
 .App-link {
   color: #61dafb;
 }
+
+
 
 .navbar-container {
   display: grid;

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './App.css';
 
 const Login=(props)=>{
     // add check to see if user already has login information in localStorage
@@ -11,13 +12,13 @@ const Login=(props)=>{
         if(usernameInput){
             console.log("logging in")
             localStorage.setItem('username', usernameInput);
-            return props.setLoginVerified(true) 
+            return props.setLoginVerified(true); 
         }
     }
 
 
     return(
-        <section>
+        <section className="View-landingpage">
             <h4>Please login:</h4>
             <form>
                 <label >
