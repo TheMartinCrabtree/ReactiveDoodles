@@ -5,38 +5,36 @@ import Home from './Home'
 import Draw from './Draw';
 import Gallery from './Gallery';
 import Profile from './Profile';
+import About from './About';
 
 const ViewController=(props)=>{
     const [state, dispatch] = useContext(Context);
-    const activeViewsObj = state.activeViews;
-    console.log("Active Views: ", activeViewsObj);
+    const activeView = state.activeViews;
+    console.log("Active Views: ", activeView);
 
-    // draw, gallery, myGallery, profile
 
-    const handleHomeView=()=>{
-        if(activeViewsObj.home){
-            return <Home />;
+    const displayActiveView=()=>{
+        // activeViews: HOME, DRAW, GALLERY, PROFILE, ABOUT
+        console.log("VC disp Active View:", activeView )
+        switch(activeView){
+            case 'HOME':
+                return <Home />;
+            case 'DRAW':
+                return <Draw />;     
+            case 'GALLERY':
+                return <Gallery />;
+            case 'PROFILE':
+                return <Profile />; 
+            case 'ABOUT':
+                return <About />; 
+            default:
+                return <Home />;
         }
-    };
-
-
-    const handleDrawView=()=>{
-        if(activeViewsObj.draw){
-            return <Draw />;
-        }
-    };
-
-    const handleProfileView=()=>{
-        if(activeViewsObj.profile){
-            return <Profile />;
-        }
-    };
+    }
 
     return(
         <section className="ViewController-container" >
-            { handleHomeView() }
-            { handleProfileView() }
-            { handleDrawView() }
+            { displayActiveView() }
         </section>
     )
 };

@@ -8,6 +8,12 @@ const Reducer=(state, action)=>{
                 ...state,
                 username: action.payload
             };
+        case 'UPDATE_VIEW':
+            return{
+                ...state,
+                activeViews: action.payload
+            }
+
         default: 
             return state;
     };

@@ -2,9 +2,10 @@
 import React, {createContext, useReducer } from 'react';
 import Reducer from './reducers/Reducer';
 
+// activeViews: HOME, DRAW, GALLERY, PROFILE, ABOUT
 const initialState = {
     username: "",
-    activeViews: { home: true, draw: false, gallery: false, profile: false, about: false  }
+    activeViews: "HOME"
 };
 
 const Store=({children})=>{
