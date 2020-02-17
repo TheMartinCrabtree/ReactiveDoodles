@@ -9,6 +9,7 @@ const NavBar=(props)=>{
 
     // activeViews: HOME, DRAW, GALLERY, PROFILE, ABOUT
     const handleViewSelect=(selection)=>{
+        console.log("navbar clicked");
         return    dispatch({type:'UPDATE_VIEW', payload: selection});
     };
     

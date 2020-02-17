@@ -4,7 +4,7 @@ import '../App.css';
 const Home=()=>{
 
     return(
-        <section className="View-landingpage" >   
+        <section  >   
             <div>
                 <p> Welcome to Derpy Doodle, where you can make terrible drawings for your wonderful friends!  </p>
             </div>

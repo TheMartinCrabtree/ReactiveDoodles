@@ -34,7 +34,9 @@ const ViewController=(props)=>{
 
     return(
         <section className="ViewController-container" >
-            { displayActiveView() }
+            <div className="View-primary">
+                { displayActiveView() }
+            </div>
         </section>
     )
 };
