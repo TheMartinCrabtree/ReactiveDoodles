@@ -18,18 +18,20 @@ const Login=(props)=>{
 
 
     return(
-        <section className="View-landingpage">
-            <h4>Please login:</h4>
-            <form>
-                <label >
-                    Username:
-                    <input type="text" value={usernameInput} onChange={(event)=>setUsernameInput(event.target.value)} />
-                </label>
-            </form>
-            <button id="login" onClick={ handleLogin } >Login</button>
+        <section className="LoginController-container" >
+            <div className="View-landingpage" >
+                <h4>Please login:</h4>
+                <form>
+                    <label >
+                        Username:
+                        <input type="text" value={usernameInput} onChange={(event)=>setUsernameInput(event.target.value)} />
+                    </label>
+                </form>
+                <button id="login" onClick={ handleLogin } >Login</button>
 
-            <div> 
-                sign up
+                <div> 
+                    sign up
+                </div>
             </div>
         </section>
     );
