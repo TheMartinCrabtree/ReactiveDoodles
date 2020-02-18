@@ -35,7 +35,7 @@ function App() {
     <main className="App-main" >
       <div className="App-container" >
         <header className="App-header" >
-          <h3>Derpy Doodles Banner</h3> { handleLogout() }
+          <h3>Derpy Doodles Banner</h3>
           
         </header>
           { verifyLogin() }
