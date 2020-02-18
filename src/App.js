@@ -11,7 +11,7 @@ function App() {
   const verifyLogin=()=>{
     if(loginVerified){
       return(
-        <Homepage />
+        <Homepage logout={handleLogout} />
       );
     }else{
       return(
@@ -21,9 +21,11 @@ function App() {
 
   };
 
+  // Broke it NEED TO FIX
   const handleLogout=()=>{
     if(loginVerified){
-      return <button id="logout" onClick={()=>setLoginVerified(false)} >Logout</button>
+      return ()=>setLoginVerified(false);
+      //return <button id="logout" onClick={()=>setLoginVerified(false)} >Logout</button>
     }
     else return;
   };

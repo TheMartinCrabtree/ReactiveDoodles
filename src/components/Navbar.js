@@ -16,12 +16,12 @@ const NavBar=(props)=>{
     return(
         <nav>
             <div className="navbar-container" >
-                <div className="navbar-item" > Welcome: { state.username }  </div>
                 <div className="navbar-item" onClick={ ()=>handleViewSelect('HOME') } > Home </div>
                 <div className="navbar-item" onClick={ ()=>handleViewSelect('PROFILE') } > Profile </div>
                 <div className="navbar-item" onClick={ ()=>handleViewSelect('DRAW') } > Draw A Doodle </div>
                 <div className="navbar-item" onClick={ ()=>handleViewSelect('GALLERY') } > Gallery </div>
                 <div className="navbar-item" onClick={ ()=>handleViewSelect('ABOUT') } > About </div>
+                <div className="navbar-item"onClick={ ()=>props.logout() } > Logout </div>
             </div>
             
         </nav>
