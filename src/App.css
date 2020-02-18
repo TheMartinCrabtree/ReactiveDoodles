@@ -5,6 +5,11 @@
   --main-border-color: #45A29E;
   --main-title-color: #66FCF1;
   --main-text-color: #C5C6C7;
+  --inner-border-color: #1F2833;
+  --inner-title-color: rgb(31, 117, 113);
+  --inner-title-text-color:  #C5C6C7;
+  --inner-menu-color: #45A29E;
+  --inner-menu-text-color: #0B0C10;
 }
 
 .App {
@@ -24,6 +29,7 @@
 }
 
 .App-header {
+  background-image: url("/images/paintsplash.png");
   background-color: var(--main-bg-color);
   min-height: 15vh;
   display: flex;
@@ -63,18 +69,35 @@
   padding: 15px;
 }
 
-.LoginController-container {
-  padding: 15px;
-}
-
-
-
 .View-primary {
   background-color: #c2d7ff;
   border: #282c34;
   border-radius: 10px;
   border-width: 1px;
   min-height: 50vh;
+  padding: calc(10px + 2vw);
+}
+
+.LoginController-container {
+  padding: calc(10px + 5vw);
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.LoginController-container-item{
+  min-height: 10vh;
+}
+
+.Standardcard-border {
+  min-height: 15vh;
+  padding: calc(10px + 2vw);
+}
+
+.Standardcard-window {
+  background-color: var(--main-menu-color);
+  border: var(--main-border-color);
+  color:var(--main-text-color);
+  border-width: 2px;
   padding: calc(10px + 2vw);
 }
 

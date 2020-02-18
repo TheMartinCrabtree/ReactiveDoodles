@@ -10,7 +10,7 @@ const Homepage=(props)=>{
 
     return(
         <Store >
-           <InterfaceWrapper  />
+           <InterfaceWrapper logout={props.logout}  />
         </Store>
     );
 }

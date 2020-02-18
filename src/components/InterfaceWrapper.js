@@ -19,7 +19,7 @@ const InterfaceWrapper=(props)=>{
 
     return(
         <section>
-            <NavBar />
+            <NavBar logout={props.logout} />
             <ViewController />
         </section>
     )

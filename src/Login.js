@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
+
 const Login=(props)=>{
     // add check to see if user already has login information in localStorage
     const [usernameInput, setUsernameInput] = useState("");
@@ -31,19 +32,21 @@ const Login=(props)=>{
 
     return(
         <section className="LoginController-container" >
-            <div className="View-landingpage" >
-                <h4>Please login:</h4>
-                <form>
-                    <label >
-                        Username:
-                        <input type="text" value={usernameInput} onChange={(event)=>setUsernameInput(event.target.value)} />
-                    </label>
-                    { handleLoginErrors()  }
-                </form>
-                <button id="login" onClick={ handleLogin } >Login</button>
+            <div className="View-primary" >
+                <div >
+                    <h4>Please login:</h4>
+                    <form className="LoginController-container-item">
+                        <label >
+                            Username:
+                            <input type="text" value={usernameInput} onChange={(event)=>setUsernameInput(event.target.value)} />
+                        </label>
+                        { handleLoginErrors()  }
+                        <button id="login" onClick={ handleLogin } >Login</button>
+                    </form>
+                </div>
 
-                <div> 
-                    sign up
+                <div className="LoginController-container-item" > 
+                    don't have an account? <button> Sign Up </button>
                 </div>
             </div>
         </section>

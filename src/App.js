@@ -11,7 +11,7 @@ function App() {
   const verifyLogin=()=>{
     if(loginVerified){
       return(
-        <Homepage />
+        <Homepage logout={handleLogout} />
       );
     }else{
       return(
@@ -21,9 +21,11 @@ function App() {
 
   };
 
+  // Broke it NEED TO FIX
   const handleLogout=()=>{
     if(loginVerified){
-      return <button id="logout" onClick={()=>setLoginVerified(false)} >Logout</button>
+      return ()=>setLoginVerified(false);
+      //return <button id="logout" onClick={()=>setLoginVerified(false)} >Logout</button>
     }
     else return;
   };
@@ -33,7 +35,7 @@ function App() {
     <main className="App-main" >
       <div className="App-container" >
         <header className="App-header" >
-          <h3>Derpy Doodles Banner</h3> { handleLogout() }
+          <h3>Derpy Doodles Banner</h3>
           
         </header>
           { verifyLogin() }
