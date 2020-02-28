@@ -1,3 +1,9 @@
+## Reactive Doodles
+Reactive Doodles is an updated version of my original Derpy Doodles web application, that has been improved and migrated to a React.js framework. The program features a bunch of quality of life improvements for both the programmer (me), and the user. For one, data-flow in the front-end will be more centralized by using a global state and reducer - taking advantage of the new useContext, and useReducer hooks that were introduced in React.js 16.7.0.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
